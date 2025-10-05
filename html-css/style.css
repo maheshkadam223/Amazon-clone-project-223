@@ -13,6 +13,7 @@
     display: flex;            /* flexbox for each content should be in front of the first  */
     align-items: center;         /* center the items vertically */
     justify-content: space-evenly;      /* space between the items */
+    position: sticky;
 
 }
 
@@ -38,6 +39,7 @@
 
 .border:hover{
     border: 1.5px solid white;      /* border color on hover */
+    border-radius: 1px;
 }
 
 
@@ -210,8 +212,7 @@ span{
     
     justify-content: space-evenly;
     background-color: #e2e7e6;
-    
-
+    padding: 20px 0px 20px;
 }
 
 .box{
@@ -333,30 +334,48 @@ span{
 
 .sign-in{
     height: 150px;
-    background-color: #e7eaee;      /* background color */
+    background-color:white;      /* background color */
     color:#0f1111;                  /* text color */   
     display: flex;            /* flexbox for each content should be in front of the first  */
     align-items: center;         /* center the items vertically */
     justify-content: center;      /* center the items horizontally */
     flex-direction: column;
-    margin-top: 10px;
+    margin: 15px;
     font-size: 24px;
+    border: 1px solid rgb(218, 214, 199);
+    padding: 10px;
 }
 .sign-btn{
+
     margin-top: 10px;
-    padding: 10px 30px;
-    background-color: orange;
+    padding: 8px 60px;
+    background-color: rgba(255, 255, 0, 0.97);
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 6px rgb(201, 197, 197);
 
 }
+.sign-btn:hover{
+
+   
+    box-shadow: 4px 4px 12px rgb(201, 197, 197);
+
+}
+
+
 .sign-in p a{
     text-decoration: none;
     color: #0000ff; 
     font-weight: 600;
     font-size: 16px;
     padding:10px;
+}
+
+.sign-in p a:hover{
+    text-decoration: underline;
+    
 }
 
 

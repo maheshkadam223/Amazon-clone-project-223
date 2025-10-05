@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon Style Results Page</title>
-  <link rel="stylesheet" href="fashion.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Amazon Fashion</title>
+  <link rel="stylesheet" href="cloths.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
 
-    <header>
-        <div  class="navbar fixed-top">
+  
+  <header>
+        <div  class="navbar">
             <div class="nav-logo border">
                  <a href="index.html"><div class="logo"></div></a>
                 
@@ -64,9 +66,8 @@
         </div>
         </div>
 
-        
 
-    <div class="panel ">
+        <div class="panel ">
         <div class="panel-all border">
             <i class="fa-solid fa-bars"></i>     <!-- menu icon -->
             All
@@ -87,133 +88,98 @@
 
      
 </header>
-    
+      
 
 
+  <!-- Filters -->
+  <aside class="filters">
+    <h2>Filters</h2>
+    <div class="filter-group">
+      <h3>Category</h3>
+      <label><input type="checkbox"> Men</label><br>
+      <label><input type="checkbox"> Women</label><br>
+      <label><input type="checkbox"> Kids</label>
+    </div>
 
+    <div class="filter-group">
+      <h3>Brand</h3>
+      <label><input type="checkbox"> Levi’s</label><br>
+      <label><input type="checkbox"> Nike</label><br>
+      <label><input type="checkbox"> Puma</label><br>
+      <label><input type="checkbox"> H&M</label>
+    </div>
 
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h3>Gender</h3>
-      <label><input type="checkbox"> Men</label>
-      <label><input type="checkbox"> Women</label>
-      <label><input type="checkbox"> Boys</label>
-      <label><input type="checkbox"> Girls</label>
-      <label><input type="checkbox"> Babies</label>
-      <label><input type="checkbox"> Unisex</label>
-
-      <h3>Customer Reviews</h3>
-      <label>⭐⭐⭐⭐ & Up</label>
-
+    <div class="filter-group">
       <h3>Price</h3>
-      <label><input type="radio" name="price"> Up to $15</label>
-      <label><input type="radio" name="price"> $15 - $20</label>
-      <label><input type="radio" name="price"> $20 - $25</label>
-      <label><input type="radio" name="price"> $25 - $35</label>
-      <label><input type="radio" name="price"> $35 & above</label>
+      <label><input type="radio" name="price"> Under ₹1000</label><br>
+      <label><input type="radio" name="price"> ₹1000–₹2000</label><br>
+      <label><input type="radio" name="price"> Above ₹2000</label>
+    </div>
+  </aside>
 
-      <h3>Department</h3>
-      <label><input type="checkbox"> T-Shirts</label>
-      <label><input type="checkbox"> Pullovers</label>
-      <label><input type="checkbox"> Blouses</label>
-      <label><input type="checkbox"> Tunics</label>
-    </aside>
-
-    <!-- Results -->
-    <section class="results">
-      <h2>Results</h2>
-      <div class="product-grid">
-        <!-- Product 1 -->
-        <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-        <!-- Product 2 -->
-        <div class="product">
-          <img src="https://m.media-amazon.com/images/I/81IKK2OzcXL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweater">
-          <div class="product-info">
-            <h4>Womens V Neck Long Sleeve Fall Fashion Top</h4>
-            <div class="rating">⭐⭐⭐⭐⭐ (7k+)</div>
-            <div class="price">$24.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-        <!-- Product 3 -->
-        <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71yj2rkmvDL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweater">
-          <div class="product-info">
-            <h4>Womens Casual Lightweight Tunic Sweater</h4>
-            <div class="rating">⭐⭐⭐⭐ (4.5k)</div>
-            <div class="price">$27.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-         <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-         <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-         <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-         <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-         <div class="product">
-          <img src="https://m.media-amazon.com/images/I/71fM2Ga+zwL._AC_UL480_FMwebp_QL65_.jpg" alt="Sweatshirt">
-          <div class="product-info">
-            <h4>Womens Half Zip Cropped Pullover Fleece</h4>
-            <div class="rating">⭐⭐⭐⭐ (5.3k)</div>
-            <div class="price">$29.99</div>
-            <a href="#" class="btn">See options</a>
-          </div>
-        </div>
-
-
-
-
-
-
-       
+  <!-- Products -->
+  <main class="products">
+    <h2>Top Cloths  Picks</h2>
+    <div class="product-grid">
+      <!-- Row 1 -->
+      <div class="product-card">
+        <img src="../image/cloths/shirt1.jpg"   alt="Mens Casual Shirt">
+        <h3>Mens Casual Shirt</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
       </div>
-    </section>
-  </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/women1.jpeg" alt="Women Dress">
+        <h3>Women Dress</h3>
+        <p>₹1,499</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/shirt2.jpeg" alt="Formal Shirt">
+        <h3>Men shirt</h3>
+        <p>₹1,199</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/women2.jpeg" alt="Long Dress">
+        <h3>women long dress</h3>
+        <p>₹1,299</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="product-card">
+        <img src="../image/cloths/shirt3.jpeg" alt="Formal Shirt">
+        <h3>Men style shirt</h3>
+        <p>₹1,899</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/women3.jpeg" alt="Casual Dress">
+        <h3>Womens casual dress </h3>
+        <p>₹2,299</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/shirt4.jpeg" alt="Graphic Shirt">
+        <h3>Graphic shirt</h3>
+        <p>₹799</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../image/cloths/women4.jpeg" alt="Traditional Dress">
+        <h3>womens traditional dress</h3>
+        <p>₹2,199</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </main>
 
    <!-- sign in section -->
 
@@ -224,9 +190,6 @@
             </a>
             <p>New customer? <a href="loginpage.html">Create your Amazon account</a></p>
         </div>
-    
-    
-    
 
     <!-- footer -->
      <footer>
@@ -289,3 +252,10 @@
     
 </body>
 </html>
+
+
+
+
+
+
+    
